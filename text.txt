@@ -1,0 +1,13 @@
+subgroup
+Total population: 56 people
+Subgroup them by age, gender, education level, weight, 
+Subgroup1 based on gender: F, M
+F: files 1-10; M: files 11-56
+subgroup_f: two category: y/n; subgroup_m: two category: 
+1. Compare: subgroup_f_y v.s. subgroup_m_y
+2. Question can we distinguish people with y (Brian injury) from health population in its own group?
+Compare: subgroup_f_y v.s. subgroup_f_n
+Population level analysis
+Precision medicine
+3. Can we find the difference between different subgroups?
+4. Question: when we are given a new participant, can we predict the Brian health of this person based on the walking trajectory?
