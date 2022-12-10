@@ -16,7 +16,10 @@ We used this experience to train a Long Short Term Memory algorithm to be able t
 
 In the file "./MovementALL_LSTM.ipynb" and "./MovementALL_LSTM.ipynb" you can found all the treatment We did on those data. The first file contains the data analyse and cleaning with the training of a single model. This model accuracy goes up to 99% with the right settings and 200 epochs. On the second file you can find the same analysis and cleaning but with a training using K-fold Cross Validation to make sure there is no overfitting on the data.
 
-# Second Dataset - Nursing Data
+
+
+
+# Second Dataset - Nursing Data.  This part cannot be taken into account !
 
 This Dataset and experience were made by the Nursing college of UNLV. It's purpose is to be able to detect an mTBI on a patient by using a smartwatch whore with a belt around the waist. This experience was made on 56 person, 19 of them with a diagnosed mTBI, and the others without.
 
@@ -27,4 +30,4 @@ This project contains 56 csv files with the values of all the sensors inside the
 
 ## Treatment
 
-The amount of data collected by the Nursing college is sufficent to perform the training of an LSTM algorithm. We used the same algorithm and data treatment on this dataset. On the file "./Nursing_data_LSTM.ipynb" you can find all the treamtent done, with this treament the accuracy of the model goes to 98% with the right settings and 200 epochs. 
+The amount of data collected by the Nursing college is sufficent to perform the training of an LSTM algorithm. We used the same algorithm and data treatment on this dataset. On the file "./Nursing_data_LSTM.ipynb" you can find all the treamtent done, with this treament the accuracy of the model goes to 98% with the right settings and 200 epochs.
