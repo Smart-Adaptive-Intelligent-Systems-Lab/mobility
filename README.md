@@ -14,14 +14,24 @@ In this dataset, the folder "./MovementALL/dataset/" you can find 314 files cont
 
 We used this experience to train a Long Short Term Memory algorithm to be able to detect wich path were curved in order to then transfer this knowledge on the other dataset, using a transfer algorithm. We used this technic because the data of the Nursing college were supposed to be too light to train a full model by themself. Our statement was that being able to detect a curve in the walking path of a patient would be close to detect walking imperment.
 
+Long short term memory algorithm is a recurrent network, we used this algorithm for his ability to treat sequence data.
+
+Data organisation. spliting the data into 2secondes samples = 16 rows per sequences
+
+To have more sample we used a special technic. doing a sample from row 1 - 16 then 2- 17 then 3-18. By doing that we would have way more sample more than 10 times the number of samples. 
+
+With the 8487 samples, I did a train test validation split. 50% train 30% test 20% validation. And then used them to train an LSTM model with 200 epoch and a batch_size of 256. The accuracy of the model with those settings is 99%. But an accuracy like that can be due to an overfitting.
+
+To remove the hypothesis of an overfitting I did a K-fold cross Validation. A K-fold cross validation is a technic to train multiple model by splitting the data differently 10 times. By doing that we make sure that every rows are used for training testing and validate. 
+
+With the K-fold cross validation all the accuracy are between 75% and 98%.
+
 In the file "./MovementALL_LSTM.ipynb" and "./MovementALL_LSTM.ipynb" you can found all the treatment We did on those data. The first file contains the data analyse and cleaning with the training of a single model. This model accuracy goes up to 99% with the right settings and 200 epochs. On the second file you can find the same analysis and cleaning but with a training using K-fold Cross Validation to make sure there is no overfitting on the data.
-
-
 
 
 # Second Dataset - Nursing Data.  This part cannot be taken into account !
 
-This Dataset and experience were made by the Nursing college of UNLV. It's purpose is to be able to detect an mTBI on a patient by using a smartwatch whore with a belt around the waist. This experience was made on 56 person, 19 of them with a diagnosed mTBI, and the others without.
+This Dataset and experience were made by the Nursing college of UNLV. It's purpose is to be able to detect an mTBI on a patient by using a smartwatch wore with a belt around the waist. This experience was made on 56 person, 19 of them with a diagnosed mTBI, and the others without.
 
 
 ## Data Structure
